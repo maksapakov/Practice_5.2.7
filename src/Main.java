@@ -4,10 +4,10 @@ import java.nio.charset.StandardCharsets;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        byte[] bytes = {48, 49, 50, 51, -1};
+        byte[] bytes = {48, 49, 50, 51, -1, 12, -25};
         InputStream inputStream = new ByteArrayInputStream(bytes);
-        System.out.println(sumOfStream(inputStream));
-//        System.out.println (ReadAsString.readAsString(inputStream, StandardCharsets.US_ASCII));
+//        System.out.println(sumOfStream(inputStream));
+        System.out.println (ReadAsString.readAsString(inputStream, StandardCharsets.US_ASCII));
 /*
         OutputStream outputStream = new ByteArrayOutputStream();
         IOStream.print(inputStream, outputStream);
